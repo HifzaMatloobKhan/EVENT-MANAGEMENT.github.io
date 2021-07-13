@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("deb.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h1 style="font-size:50px">PAYMENT</h1>
+  <h2 style="font-size:40px">DONT HESITATE YOUR JUST 1 STEP AWAY</h2>
+</div>
+
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="p.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+      <h2>Payment Form</h2>
+      <form method="POST">
+        <h4>Account</h4>
+        <div class="input-group">
+          <div class="input-box">
+             <h4>First name</h4>
+            <input type="text" placeholder="First Name" required class="name">
+          </div>
+          <div class="input-box">
+             <h4>Last Name</h4>
+            <input type="text" placeholder="Last Name" required class="name">
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+             <h4>Email</h4>
+            <input type="email" placeholder="Email Adress" required class="name">
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+             <h4>Date Of Birth</h4>
+             <input type="date" id="birth date" name="birth date">
+          </div>
+          <div class="input-box">
+            <h4>Gender</h4>
+            <input type="radio" id="b1" name="gender" cheched>
+            <label for="b1">Male</label>
+            <input type="radio" id="b2" name="gender" cheched>
+            <label for="b2">Female</label>
+          </div>
+ 
+        </div>
+        <div class="input-group">
+           <div class="input-box">
+              <h4>Payment Details</h4>
+              <input type="radio" id="bc1" name="pay" checked>
+              <label for="bc1">Credit Card</label>
+              <input type="radio" name="pay" id="bc2" checked>
+              <label for="bc2">Easy Paisa</label>
+           </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+             <h4>Card Number</h4>
+             <input type="tel" placeholder="0000 0000 0000 0000" required maxlength="19" class="name">
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+             <h4>Card CVC:</h4>
+             <input type="tel" placeholder="0000" required maxlength="4" class="name">
+          </div>
+          <div class="input-box">
+             <h4>Expiry Date</h4>
+             <select>
+                <option>Jan</option>
+                <option>Feb</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>Aug</option>
+                <option>Sep</option>
+                <option>Oct</option>
+                <option>Nov</option>
+                <option>Dec</option>
+             </select>
+             <select>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+             </select>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+            <center><button type="submit">Confirm Payment</button><center>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
+
